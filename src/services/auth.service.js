@@ -1,6 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
-const api_URL = "http://localhost:8080/auth";
+const api_URL = process.env.REACT_APP_BACKEND_URL + "/auth";
 
 const AuthService = {
   signup(username, email, password) {

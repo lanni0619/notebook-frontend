@@ -1,5 +1,5 @@
 import axios from "axios";
-const api_URL = "http://localhost:8080/note";
+const api_URL = process.env.REACT_APP_BACKEND_URL + "/note";
 
 const noteService = {
   getToken() {
